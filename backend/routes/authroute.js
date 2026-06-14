@@ -4,11 +4,11 @@ import {
     login,
     createAgent,
     getAgents
-} from '../controllers/auth.controller.js'
+} from '../controllers/authcontroller.js'
 import {
     isAuthenticated,
     isAdmin
-} from '../middleware/auth.middleware.js'
+} from '../middleware/auth.js'
 
 const router = express.Router()
 

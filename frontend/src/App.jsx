@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Landing from './pages/Landing'
 import Login from './pages/Login'
 import Register from './pages/Register'
@@ -8,6 +8,7 @@ import MyOrders from './pages/customer/MyOrders'
 import AdminDashboard from './pages/admin/AdminDashboard'
 import ManageMeals from './pages/admin/ManageMeals'
 import ManageOrders from './pages/admin/ManageOrders'
+import ManageAgents from './pages/admin/ManageAgents'
 import AgentDashboard from './pages/agent/AgentDashboard'
 import ProtectedRoute from './components/ProtectedRoute'
 
@@ -51,6 +52,11 @@ function App() {
                 <Route path='/admin/orders' element={
                     <ProtectedRoute role='admin'>
                         <ManageOrders />
+                    </ProtectedRoute>
+                } />
+                <Route path='/admin/agents' element={
+                    <ProtectedRoute role='admin'>
+                        <ManageAgents />
                     </ProtectedRoute>
                 } />
 

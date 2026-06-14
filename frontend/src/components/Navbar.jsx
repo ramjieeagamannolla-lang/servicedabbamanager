@@ -26,6 +26,7 @@ function Navbar() {
                                 <Link to='/dashboard' className='hover:underline'>Menu</Link>
                                 <Link to='/cart' className='hover:underline'>🛒 Cart</Link>
                                 <Link to='/my-orders' className='hover:underline'>My Orders</Link>
+                               
                             </>
                         )}
 
@@ -34,6 +35,7 @@ function Navbar() {
                                 <Link to='/admin/dashboard' className='hover:underline'>Dashboard</Link>
                                 <Link to='/admin/meals' className='hover:underline'>Meals</Link>
                                 <Link to='/admin/orders' className='hover:underline'>Orders</Link>
+                                 <Link to='/admin/agents' className='hover:underline'>Agents</Link>
                             </>
                         )}
 
