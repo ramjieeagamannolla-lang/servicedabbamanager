@@ -1,12 +1,12 @@
 import express from 'express'
 import mongoose from 'mongoose'
 import dotenv from 'dotenv'
+dotenv.config()
 import cors from 'cors'
 import authRoutes from './routes/authroute.js'
 import mealRoutes from './routes/mealroute.js'
 import cartRoutes from './routes/cartroute.js'
 import orderRoutes from './routes/orderroute.js'
-dotenv.config()
 const app = express()
 app.use(cors({
   origin: (origin, callback) => {
